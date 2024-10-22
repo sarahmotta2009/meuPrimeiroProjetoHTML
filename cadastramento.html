@@ -4,87 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Login</title>
-    <Style>
-        form{
-            text-align: center;
-        }
-
-        p:{
-            margin: 10px 0;
-        }
-
-        body{
-            background: rgb(18, 7, 0);
-            font-family: monospace;
-            font-size: 16px;
-            color: blueviolet;
-        }
-
-        h1{
-            text-align: center;
-            color: aliceblue;
-            font-size: 24px;
-        }
-
-        button{
-            background-color: #ff8800;
-            color: white;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 18px;
-            font-family: monospace;
-        }
-
-        select{
-            font-family: monospace
-        } 
-        a{
-            color: white;
-        }
-        placeholder{
-            font-family: monospace
-        }
-
-    </Style>
-
+    <link rel="stylesheet" href="./css/global.css">
 </head>
 <body>
-
-    <Br>
-        
-    <h1>Login</h1>    
-
-    <Form>
-        <p>
-            <label for="nomedousuario">Nome:</label>
-            <input name="nomedousuario" type="text" placeholder="Nome Completo">
+    <form method="./index.html" action="post">
+        <h1>Sucesso Cadastramento</h1>
+        <button type="button" onclick="location.href='index.html'">OK</button>
         </p>
-        
-        <P>
-            <label for="emaildousuario">Seu Email:</label>
-            <input name="emaildousuario" type="email" placeholder="Email" required>
-        </P>
-
-        <p>
-            <label for="senha">Senha:</label>
-            <input name="senha" type="password" placeholder="Senha Do Usuário" required>
-        </p>
-
-        <p>
-            <label for="confirmesuasenha">Confirme sua Senha:</label>
-            <input name="confirmesuasenha" type="password" placeholder="Confirme Sua Senha" required>
-        </p>
-
-        <select name="perfil">
-            <option value="professor">Professor</option>
-            <option value="administrador">Administrador</option>
-            <option value="jogador">Jogador</option>
-        </select>
-
-        <br>
-        <br>
-
-        <button type="submit">Cadastrar</button><br><br>
-    </Form>
+    </form>
 </body>
 </html>
